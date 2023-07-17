@@ -1,0 +1,22 @@
+{
+  "user": [
+    {
+      "id": "Username",
+      "name": "User Admin",
+      "password": "Admin@123",
+      "email": "Admin@gmail.com",
+      "gender": "female",
+      "role": "admin",
+      "isactive": true
+    },
+    {
+      "id": "Jenalyn",
+      "name": "Jenalyn Miranda",
+      "password": "Jam123",
+      "email": "Jam@gmail.com",
+      "gender": "female",
+      "role": "user",
+      "isactive": true
+    }
+  ]
+}
