@@ -1,27 +1,14 @@
-# VolunteerApplication
+# Eco-Connect: Volunteer Management Application System
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.9.
 
-## Development server
+## Project Description
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+          Volunteers are people who give their time, skills, and services without expecting payment in return. They give their time and energy to a variety of causes, organizations, or activities that help improve society or further a particular goal. Volunteers are essential to communities, charities, non-profits, and other institutions because they offer their time, knowledge, and support in a variety of fields, including disaster relief, education, healthcare, environmental conservation, and more. 
+          Many volunteer organizations use Facebook as a tool to promote their initiatives, engage with their audience, and spread awareness about their causes. However, Facebook's functionalities are limited when it comes to comprehensive volunteer management. While it serves as a convenient tool for communication, it lacks features specifically designed for volunteer coordination. Consequently, the organization may face challenges in efficiently managing their volunteers and ensuring smooth coordination of activities. 
+          To overcome these challenges, the team aim to design and develop a mobile application that offer a wider range of features catered specifically to volunteer management needs. 
+          The project will focus on Sustainable Development Goal (SDG) 15, "Life on Land," which aims to protect, restore, and promote sustainable use of terrestrial ecosystems, forests, and biodiversity.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
