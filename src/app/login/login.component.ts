@@ -14,7 +14,9 @@ export class LoginComponent {
     private toastr: ToastrService, 
     private service: AuthService, 
     private router: Router) {
+      sessionStorage.clear();
  }
+
 
  userdata: any;
 
@@ -22,17 +24,19 @@ export class LoginComponent {
   username: this.builder.control('', Validators.required),
   password: this.builder.control('', Validators.required)
 });
+
 proceedlogin() {
   if (this.loginform.valid) {
 
     this.service.GetbyCode(this.loginform.value.username).subscribe(res => {
       this.userdata = res;
       console.log(this.userdata);
+
       if (this.userdata.password === this.loginform.value.password) {
-        if(this.userdata.role == "user"){
+        if(this.userdata.role == "User"){
           this.router.navigate(['user-dashboard']);
-        } else if(this.userdata.role != "user"){
-          this.router.navigate(['home']);
+        } else if(this.userdata.role == "Admin"){
+          this.router.navigate(['user']);
         }
       }  else  {
         this.toastr.error('Invalid credentials');
