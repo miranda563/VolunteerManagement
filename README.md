@@ -14,9 +14,7 @@ The project will focus on Sustainable Development Goal (SDG) 15, "Life on Land,"
 
 ### Prerequisites
 
--Visual Studio Code
-*Canva
-+Github
+Visual Studio Code | Canva | Github
 
 
 
