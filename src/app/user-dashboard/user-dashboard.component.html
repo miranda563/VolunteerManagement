@@ -1,1 +1,26 @@
-<p>user-dashboard works!</p>
+<mat-card>
+    <mat-card-header>
+        <h2 style="font-family: century gothic;">Projects</h2>
+    </mat-card-header>
+    <mat-card-content>
+        <div class="mat-elevation-z8">
+            <table mat-table matSort  [dataSource]="dataSource">
+        
+              <ng-container  matColumnDef="title">
+                <th style="font-family: century gothic;" mat-header-cell mat-sort-header *matHeaderCellDef> Projects </th>
+                <td style="font-family: century gothic;" mat-cell *matCellDef="let element"> {{element.title}} </td>
+              </ng-container>
+          
+              <tr  mat-header-row *matHeaderRowDef="displayedColumns" (click)="rowClicked(row)"></tr>
+              <tr mat-row *matRowDef="let row; columns: displayedColumns;" (click)="rowClicked(row)"></tr>
+            </table>
+          
+           
+          </div>
+    </mat-card-content>
+  </mat-card>
+
+  
+
+
+

@@ -1,0 +1,14 @@
+.button {
+    font-family: century gothic;
+    font-weight: 500;
+    font-size: small;
+    height: 20px;
+    width: 70px;
+    border-radius: 3px;
+  }
+  .cards {
+    all: unset;
+    padding-top: 5%;
+    position: relative;
+    top: 3px;
+  }

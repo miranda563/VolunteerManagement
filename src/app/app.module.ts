@@ -15,6 +15,15 @@ import { UserlistingComponent } from './userlisting/userlisting.component';
 import { UpdatepopupComponent } from './updatepopup/updatepopup.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
+import { CprojectComponent } from './cproject/cproject.component';
+import { FormsModule } from '@angular/forms';
+import { LandingComponent } from './landing/landing.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { PlistComponent } from './plist/plist.component';
+import { MatIconModule } from '@angular/material/icon';
+import { UserprojComponent } from './userproj/userproj.component';
+import { ConfirmpopupComponent } from './confirmpopup/confirmpopup.component';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +33,13 @@ import { UserDashboardComponent } from './user-dashboard/user-dashboard.componen
     HomeComponent,
     UserlistingComponent,
     UpdatepopupComponent,
-    UserDashboardComponent
+    UserDashboardComponent,
+    CprojectComponent,
+    LandingComponent,
+    ProjectsComponent,
+    PlistComponent,
+    UserprojComponent,
+    ConfirmpopupComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,7 +49,10 @@ import { UserDashboardComponent } from './user-dashboard/user-dashboard.componen
     ReactiveFormsModule,
     HttpClientModule,
     ToastrModule.forRoot(),
-    MatFormFieldModule
+    MatFormFieldModule,
+    FormsModule,
+    MatIconModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

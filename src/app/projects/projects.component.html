@@ -1,0 +1,36 @@
+<div id="bg">
+  <div  class="toolbar" style="width: auto;">
+    <a routerLink="/user">User</a>
+    <div class="spacer"> </div>
+    <a  style="text-decoration-line: underline;">Projects</a>
+    <div class="spacer"> </div>
+    <a routerLink="/cproject">Create Project</a>
+    <div class="spacer"> </div>
+    <a   routerLink="/login">Logout</a> 
+</div>
+
+<mat-card>
+  <mat-card-header class="header"></mat-card-header>
+    <mat-card-content >
+        <div class="cards">
+            <table mat-table matSort  [dataSource]="dataSource">
+              <ng-container  matColumnDef="title">
+                <th style="font-size: larger; font-family: century gothic; font-weight: 500" mat-header-cell mat-sort-header *matHeaderCellDef> Projects </th>
+                <td style="font-family: century gothic; font-size: medium;" mat-cell *matCellDef="let element"> {{element.title}} </td>
+              </ng-container>
+              <tr  mat-header-row *matHeaderRowDef="displayedColumns" (click)="rowClicked(row)"></tr>
+              <tr mat-row *matRowDef="let row; columns: displayedColumns;" (click)="rowClicked(row)"></tr>
+            </table>
+          </div>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+
+
+
+
+
+
+
+

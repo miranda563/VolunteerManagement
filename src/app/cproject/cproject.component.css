@@ -1,0 +1,48 @@
+.all {
+  height: 100%;
+  width: 100%;
+  font-family: century gothic;
+
+}
+
+#bg {
+  height: 650 px;
+  background-image: url("../../assets/images/login.png");
+  background-size: 100%;
+  background-size: cover;
+ 
+}
+
+
+.card {
+  all: unset;
+  position: relative;
+  top: 33%;
+  height: 50%;
+  width: 200px;
+  margin: 0 14px 6px;
+  padding-top: 20px;
+  padding: 18%;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  line-height: 24px;
+}
+
+.button {
+  font-family:  century gothic;
+  font-weight: 500;
+  font-size: medium;
+  position: absolute;
+  margin-left: 90px;
+  margin-top: -10px;
+  height: 40px;
+  width: 150px;
+  border-radius: 10px;
+}
+
+.form {
+  font-family: century gothic;
+  margin-top: 0px;
+
+}

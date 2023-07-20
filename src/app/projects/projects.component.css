@@ -1,0 +1,115 @@
+#bg {
+  height: 650 px;
+  background-size: 100%;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  font-family: century gothic;
+}
+
+.spacer {
+  flex: 1;
+  flex-grow: 1;
+}
+.space{
+  flex: 0.5;
+  flex-grow: 1;
+}
+
+.toolbar {
+  padding: 5%;
+  font-family: century gothic;
+  font-size: small;
+  margin-right: 0;
+  position: relative;
+  top: 40;
+  left: 0;
+  right: 0;
+  height: 5%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: 500;
+  font-size: medium;
+  background-color: #0A4232;
+  color: white;
+}
+
+.cards {
+
+  padding-top: -15%;
+  position: relative;
+  top: -40px;
+}
+
+
+.button {
+  font-family: century gothic;
+  font-weight: 500;
+  font-size: small;
+  height: 20px;
+  width: 70px;
+  border-radius: 3px;
+}
+a,
+a:visited,
+a:hover {
+  color: white;
+  text-decoration: none;
+  font-size: large;
+}
+
+.header{
+  background-color: white;
+  text-align: center;
+  font-size: larger;
+  height: 40px;
+  margin-top: -1%;
+  color: rgb(0, 0, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Styles */
+@media screen and (max-width: 767px) {
+
+  .card-container>*:not(.circle-link),
+  .terminal {
+    width: 100%;
+  }
+
+  .card:not(.highlight-card) {
+    height: 16px;
+    margin: 8px 0;
+  }
+
+
+
+  svg#rocket-smoke {
+    right: 120px;
+    transform: rotate(-5deg);
+  }
+}
+
+@media screen and (max-width: 575px) {
+  svg#rocket-smoke {
+    display: none;
+    visibility: hidden;
+  }
+}

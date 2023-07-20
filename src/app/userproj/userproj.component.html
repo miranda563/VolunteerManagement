@@ -1,0 +1,18 @@
+<br>
+<span routerLink="/user-dashboard" class="material-icons" >arrow_back</span>
+<mat-card *ngFor="let element of projlist" >
+    <mat-card-header></mat-card-header>
+    <mat-card-content>
+
+        <form class="card" [formGroup]="volform" (ngSubmit)="confirm()">
+        
+        <h2> {{element.title}}</h2>
+        <p> {{element.dscrptn}}</p>
+        <button style="color: white; background-color: #0A4232;" class="button" mat-raised-button  >Join</button>
+
+        
+        </form>
+       
+
+    </mat-card-content>
+</mat-card>

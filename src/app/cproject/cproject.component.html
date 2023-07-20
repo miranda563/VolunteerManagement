@@ -1,0 +1,27 @@
+<mat-card>
+  <br>
+    <span style="margin-left: 3%;" routerLink="/project" class="material-icons">arrow_back</span>
+    <mat-card-header>
+        <h2 style="font-family: century gothic;">Create Project</h2>
+    </mat-card-header>
+    <mat-card-content>
+        
+        <form class="card" [formGroup]="projectform" (ngSubmit)="Uploadproject()">
+
+            <mat-form-field style="width: 345px; margin-left: -22%; font-family: century gothic;">
+              <mat-label style="font-family: century gothic;">Project Title</mat-label>
+              <input matInput formControlName="title" >
+            </mat-form-field>
+              <br>
+            <mat-form-field style="width: 345px; font-family: century gothic;">
+                <mat-label style="font-family: century gothic;">Project Description</mat-label>
+                <textarea matInput formControlName="dscrptn" rows="5"></textarea>
+              </mat-form-field>
+
+              <div>
+                <button style="background-color: #0A4232; color: white;"  mat-raised-button class="button">Post</button>
+              </div>
+          </form>
+    </mat-card-content>
+  </mat-card>
+

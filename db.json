@@ -1,22 +1,59 @@
 {
   "user": [
     {
-      "id": "Username",
-      "name": "User Admin",
-      "password": "Admin@123",
-      "email": "Admin@gmail.com",
-      "gender": "female",
-      "role": "admin",
+      "id": "Admin",
+      "name": "Jenalyn Miranda",
+      "password": "Jam@123",
+      "role": "Admin",
       "isactive": true
     },
     {
-      "id": "Jenalyn",
-      "name": "Jenalyn Miranda",
-      "password": "Jam123",
-      "email": "Jam@gmail.com",
-      "gender": "female",
-      "role": "user",
+      "id": "georgie",
+      "name": "Georgina",
+      "password": "Padilla122",
+      "role": "Admin",
       "isactive": true
+    },
+    {
+      "id": "Derick",
+      "name": "Derick Enrile",
+      "password": "Derick@123",
+      "role": "User",
+      "isactive": true
+    },
+    {
+      "id": "Georgina",
+      "name": "Georgina Padilla",
+      "password": "Padilla-23",
+      "role": "User",
+      "isactive": true
+    }
+  ],
+  "projectlist": [
+    {
+      "title": "Clean Seas Initiative",
+      "dscrptn": "On August 8, 2023, at exactly 6 in the morning at Butong, Taal Batangas you can join the Clean Seas Initiative and help us combat ocean pollution by organizing beach cleanups, educating communities about the importance of reducing plastic waste, and advocating for policies to prevent marine debris. Together, we can create cleaner and healthier oceans.",
+      "id": 1
+    }
+  ],
+  "role": [
+    {
+      "code": "User",
+      "name": "User"
+    },
+    {
+      "code": "Admin",
+      "name": "Admin"
+    }
+  ],
+  "volunteers": [
+    {
+      "vname": "Georgina Padilla",
+      "id": 1
+    },
+    {
+      "vname": "Georgina Padilla",
+      "id": 2
     }
   ]
 }

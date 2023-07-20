@@ -6,19 +6,48 @@ import { Injectable } from '@angular/core';
 })
 export class AuthService {
 
-  constructor( private http:HttpClient) { }
-  apiurl='http://localhost:3000/user';
+  constructor(private http: HttpClient) { }
+  apiurl = 'http://localhost:3000/user';
+  proj = 'http://localhost:3000/projectlist';
+  volunteer = '  http://localhost:3000/volunteers';
 
-  Getall(){
+  Getall() {
     return this.http.get(this.apiurl);
   }
-  GetbyCode(code:any){
-    return this.http.get(this.apiurl+'/'+code);
+  GetbyCode(code: any) {
+    return this.http.get(this.apiurl + '/' + code);
   }
-  Proceedregister(inputdata:any){
+  Proceedregister(inputdata: any) {
     return this.http.post(this.apiurl, inputdata);
   }
-  Updateuser(code:any, inputdata:any){
-    return this.http.put(this.apiurl+'/'+code, inputdata);
+  GetVolunteer(inputdata: any) {
+    return this.http.post(this.volunteer, inputdata);
   }
+  GetVol() {
+    return this.http.get(this.volunteer);
+  }
+  Updateuser(code: any, inputdata: any) {
+    return this.http.put(this.apiurl + '/' + code, inputdata);
+  }
+  GetAllRole() {
+    return this.http.get(' http://localhost:3000/role');
+  }
+  isloggedin() {
+    return sessionStorage.getItem('username') != null;
+  }
+  getuserrole() {
+    return sessionStorage.getItem('userrole') != null ? sessionStorage.getItem('userrole')?.toString() : '';
+  }
+  GetAllProj() {
+    return this.http.get(this.proj);
+  }
+  GetCode(code: any) {
+    return this.http.get(this.proj + '/' + code);
+  }
+  Uploadproject(inputdata: any) {
+    return this.http.post(this.proj, inputdata);
+  }
+ 
+
+
 }
