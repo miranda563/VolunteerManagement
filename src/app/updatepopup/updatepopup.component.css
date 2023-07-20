@@ -1,0 +1,15 @@
+.button {
+    font-family: century gothic;
+    font-weight: 500;
+    font-size: small;
+    height: 20px;
+    width: 70px;
+    border-radius: 3px;
+    background-color: #0A4232;
+    color: white;
+    margin-left: 5px;
+
+  }
+  .all{
+    font-family: century gothic;
+  }
