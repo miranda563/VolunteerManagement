@@ -1,0 +1,63 @@
+.all {
+  height: 100%;
+  width: 100%;
+  font-family: century gothic;
+
+}
+
+#bg {
+  height: 650 px;
+  background-image: url("../../assets/images/regi.png");
+  background-size: 100%;
+  background-size: cover;
+ 
+}
+
+.card {
+  all: unset;
+  position: absolute;
+  top: 25%;
+  height: 30%;
+  width: 200px;
+  margin: 0 80px 6px;
+  padding-top: 230px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  
+}
+
+.button {
+  font-family:  century gothic;
+  font-weight: 500;
+  font-size: medium;
+  padding: 10px;
+  position: absolute;
+  margin-left: 55px;
+  margin-top: -2px;
+  height: 40px;
+  width: 200px;
+  background-color: #0A4232;
+  border-radius: 10px;
+  border: 2px solid #0A4232;
+  color: white;
+}
+
+.form {
+  font-family: century gothic;
+  border-radius: 10px;
+  margin-top: -270px;
+  width: 300px;
+}
+.input{
+  font-family: century gothic;
+  width: 250px;
+  height: 70px;
+  padding-inline: 25px;
+ 
+}
+.label{
+ margin-left: 40px;
+}

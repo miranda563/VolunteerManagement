@@ -17,13 +17,12 @@ export class RegisterComponent {
      private router: Router) {
 
   }
-  registerform = this.builder.group({
-    id: this.builder.control('', Validators.compose([Validators.required, Validators.minLength(5)])),
+  
+   registerform = this.builder.group({
+    id: this.builder.control('', Validators.compose([Validators.required, Validators.minLength(3)])),
     name: this.builder.control('', Validators.required),
-    password: this.builder.control('', Validators.compose([Validators.required, Validators.pattern('(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])[A-Za-z\d$@$!%*?&].{8,}')])),
-    email: this.builder.control('', Validators.compose([Validators.required, Validators.email])),
-    gender: this.builder.control(''),
-    role: this.builder.control('user'),
+    password: this.builder.control('', Validators.compose([Validators.required, Validators.pattern('(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])[A-Za-z\d$@$!%*?&].{5,}')])),
+    role: this.builder.control('User'),
     isactive: this.builder.control(true)
   });
 

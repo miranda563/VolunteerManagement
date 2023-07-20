@@ -1,53 +1,31 @@
-<mat-card>
-    <mat-card-header>
-        <h2>Registeration</h2>
-    </mat-card-header>
-    <mat-card-content>
-        <form class="example-form" [formGroup]="registerform" (ngSubmit)="Proceedregister()">
+<div id="bg" class="all">
+<mat-card class="card">
+   
+    <mat-card-content >
+        <form class="form" [formGroup]="registerform" (ngSubmit)="Proceedregister()">
 
-            <mat-form-field class="example-full-width">
+            <mat-form-field class="input">
               <mat-label>Username</mat-label>
               <input matInput formControlName="id" >
             </mat-form-field>
 
-            <mat-form-field class="example-full-width">
+            <mat-form-field class="input">
                 <mat-label>Name</mat-label>
                 <input matInput formControlName="name" >
               </mat-form-field>
 
-              <mat-form-field class="example-full-width">
-                <mat-label>Email</mat-label>
-                <input matInput formControlName="email" >
-              </mat-form-field>
-
-              <mat-form-field class="example-full-width">
+              <mat-form-field class="input">
                 <mat-label>Password</mat-label>
-                <input type="password" matInput formControlName="password" >
+                <input type="password"  matInput formControlName="password" >
               </mat-form-field>
 
-              <mat-form-field class="example-full-width">
-                <mat-label>Address</mat-label>
-                <input matInput formControlName="address" >
-              </mat-form-field>
-
-
-              
-
-             
-
-
-
-             
-
-              <mat-radio-group formControlName="gender" aria-label="Select an option">
-                <br>
-                <mat-radio-button value="male">Male</mat-radio-button>
-                <mat-radio-button value="female">Female</mat-radio-button>
-              </mat-radio-group>
+  
               <div>
-                <button mat-raised-button color="primary">Submit</button>
-                <a routerLink="/login" mat-raised-button color="accent">Back to Login</a>
+                <button style="background-color: #0A4232; color: white;" class="button" mat-raised-button >Sign Up</button>
+                <br><br> <label style="font-size: small;" class="label">Already have an account? </label>
+                <a style="left:75px;  color: #0A4232;"  routerLink="/login" >Login</a>
               </div>
           </form>
     </mat-card-content>
   </mat-card>
+  </div>
